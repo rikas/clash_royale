@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require 'bundler/setup'
+require 'clash_royale'
+
+require 'dotenv'
+Dotenv.load
+
+ClashRoyale.configure do |config|
+  config.token = ENV['CR_API_TOKEN']
+end
+
+require 'pry'
+Pry.start
