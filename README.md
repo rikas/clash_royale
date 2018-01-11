@@ -1,7 +1,10 @@
-# ClashRoyale::Api
+# ClashRoyale
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/clash_royale/api`. To experiment with that code, run `bin/console` for an interactive prompt.
+This is a Ruby wrapper of the popular [CR API](https://cr-api.com/)
 
+**Note**: In order to be able to use the API, you would need a developer key. You can get the
+developer key by following instructions listed on
+[CR API website](http://docs.cr-api.com/#/authentication)
 
 ## Installation
 
