@@ -2,7 +2,7 @@
 
 This is a Ruby wrapper of the popular [CR API](https://cr-api.com/)
 
-> **Note**: In order to be able to use the API, you would need a developer key. You can get the
+> **Note**: In order to be able to use the API, you would need a developer key. You can get a
 developer key by following instructions listed on
 [CR API website](http://docs.cr-api.com/#/authentication)
 
@@ -11,7 +11,7 @@ developer key by following instructions listed on
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'clash_royale-api'
+gem 'clash_royale'
 ```
 
 And then execute:
@@ -20,11 +20,17 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install clash_royale-api
+    $ gem install clash_royale
 
 ## Usage
 
-TODO: Write usage instructions here
+After you get an API key then you can configure `ClashRoyale` to use it:
+
+```ruby
+ClashRoyale.configure do |config|
+  config.token = YOUR_TOKEN
+end
+```
 
 ## Development
 
@@ -34,7 +40,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/clash_royale-api.
+Bug reports and pull requests are welcome on GitHub at https://github.com/rikas/clash_royale.
 
 ## License
 
