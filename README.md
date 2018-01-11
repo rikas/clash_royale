@@ -2,7 +2,7 @@
 
 This is a Ruby wrapper of the popular [CR API](https://cr-api.com/)
 
-**Note**: In order to be able to use the API, you would need a developer key. You can get the
+> **Note**: In order to be able to use the API, you would need a developer key. You can get the
 developer key by following instructions listed on
 [CR API website](http://docs.cr-api.com/#/authentication)
 
