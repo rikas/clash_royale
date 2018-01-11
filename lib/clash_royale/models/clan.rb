@@ -3,6 +3,7 @@
 require 'clash_royale/model'
 require 'clash_royale/models/clan_member'
 require 'clash_royale/models/clan_rank'
+require 'clash_royale/errors'
 
 module ClashRoyale
   class Clan < Model
@@ -11,6 +12,8 @@ module ClashRoyale
 
     def self.find(code)
       response = ClashRoyale.client.get("/clans/#{code}")
+
+      raise ClashRoyale::NotFound, "Clan '#{code}' was not found." unless response.success?
 
       json = JSON.parse(response.body)
 
@@ -47,6 +50,10 @@ module ClashRoyale
 
     def chest_active?
       clan_chest == 'active'
+    end
+
+    def open?
+      type == 'open'
     end
   end
 end
